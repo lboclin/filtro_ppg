@@ -8,19 +8,17 @@ O algoritmo final utiliza uma abordagem híbrida que analisa o sinal PPG em conj
 
 ## Estrutura do Projeto
 
-O repositório está organizado da seguinte forma:
-
 filtro_ppg/
-│
 ├── _experimental/        # (IGNORADO PELO GIT) Scripts de testes e versões antigas.
 ├── data/                 # (IGNORADO PELO GIT) Dados brutos e intermediários.
-├── results/              # Contém os resultados finais em formato .csv.
-│   ├── ground_truth/     # BPM calculado a partir do ECG (padrão-ouro).
-│   └── bpm_vfinal/       # BPM calculado pelo nosso algoritmo final.
 ├── outputs/              # Contém todas as visualizações e gráficos gerados.
-│   ├── output_pre_filtered/
+│   ├── final_comparison/
+│   ├── final_comparison_filtered/
 │   ├── output_filtered_1/
-│   └── final_comparison_filtered/
+│   └── output_pre_filtered/
+├── results/              # Contém os resultados finais em formato .csv.
+│   ├── bpm_vfinal/       # BPM calculado pelo nosso algoritmo final.
+│   └── ground_truth/     # BPM calculado a partir do ECG (padrão-ouro).
 └── scripts/              # Contém todo o código-fonte do pipeline principal.
 
 ## O Pipeline de Processamento
