@@ -1,0 +1,16 @@
+# Ignorar pastas de ambiente Python e configurações de IDE
+__pycache__/
+*.pyc
+.vscode/
+
+# Ignorar a pasta principal de DADOS, pois contém arquivos .npy grandes e intermediários
+# Esta é a regra mais importante para manter o repositório leve.
+/data/
+
+# Ignorar a pasta com scripts antigos e de teste que decidimos arquivar
+/_experimental/
+
+# Ignorar pastas de resultados que não são a versão final (se existirem)
+/results/nlms_results/
+/results/simple_fft/
+/results/peaks_filter/
